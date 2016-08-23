@@ -20,30 +20,61 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我左邊坐一個小屁孩"
-            android:id="@+id/textView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:text="終極小屁孩表決"
+            android:id="@+id/inforText"
             android:layout_marginTop="30dp"
-            android:soundEffectsEnabled="true" />
+            android:soundEffectsEnabled="true"
+            android:textSize="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
+            android:text="請輸入您的大名"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/nameEditText"
             android:layout_marginTop="26dp"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/inforText"
+            android:layout_centerHorizontal="true"
+            android:hint="請輸入您的大名" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText"
+            android:layout_below="@+id/nameEditText"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"></RadioGroup>
+            android:layout_marginTop="20dp"
+            android:id="@+id/optionGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吳承鴻"
+                android:id="@+id/radioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黃俊叡"
+                android:id="@+id/radioButton2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="劉邦立"
+                android:id="@+id/radioButton3" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投票"
+            android:id="@+id/confirmButton"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/optionGroup"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 </LinearLayout>
