@@ -20,17 +20,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="我左邊坐一個小屁孩"
             android:id="@+id/textView"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="30dp"
+            android:soundEffectsEnabled="true" />
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView2"
-            android:layout_below="@+id/textView" />
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"></RadioGroup>
+
     </RelativeLayout>
 </LinearLayout>
